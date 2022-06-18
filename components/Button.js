@@ -1,4 +1,6 @@
-const Buttons = ({ children, className, onClick }) => {
+import React from "react";
+
+const Button = ({ children, className, onClick }) => {
     return (
       <div>
         <button
@@ -11,5 +13,5 @@ const Buttons = ({ children, className, onClick }) => {
     );
   };
   
-  export default Buttons;
+  export default Button;
   
