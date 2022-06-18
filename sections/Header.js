@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Button from "../components/Button";
+import Button from "../components/Btn";
 
 const Header = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -26,7 +26,7 @@ const Header = () => {
 
     if (currentTheme === "dark") {
       return (
-        <Button className="bg-gray-200 dark:bg-gray-600" onClick={() => setTheme('light')}>
+        <Btn className="bg-gray-200 dark:bg-gray-600" onClick={() => setTheme('light')}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -39,12 +39,12 @@ const Header = () => {
               clipRule="evenodd"
             />
           </svg>
-        </Button>
+        </Btn>
       );
     } else {
       return (
         <>
-          <Button className="bg-gray-200" onClick={() => setTheme('dark')}>
+          <Btn className="bg-gray-200" onClick={() => setTheme('dark')}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -53,7 +53,7 @@ const Header = () => {
             >
               <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
             </svg>
-          </Button>
+          </Btn>
         </>
       );
       

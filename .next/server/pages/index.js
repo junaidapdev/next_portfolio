@@ -12,7 +12,7 @@ exports.id = "pages/index";
 exports.ids = ["pages/index"];
 exports.modules = {
 
-/***/ "./components/button.js":
+/***/ "./components/Btn.js":
 /*!******************************!*\
   !*** ./components/button.js ***!
   \******************************/
