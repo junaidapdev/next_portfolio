@@ -1,4 +1,4 @@
-import Buttons from "../components/button";
+import Buttons from "../components/Btn";
 import Image from "next/image";
 
 const Hero = () => {
